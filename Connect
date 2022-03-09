@@ -1,0 +1,87 @@
+@app.route('/stripe_webhooks', methods=['POST'])
+def webhook():
+    stripe_payload = request.json
+   {
+  "object": {
+    "id": "acct_1KR9pNHUhMG4O3Va",
+    "object": "account",
+    "business_profile": {
+      "mcc": "7299",
+      "name": "DRAGON TATTOO IN WORLD",
+      "support_address": {
+        "city": "Doncaster",
+        "country": "AU",
+        "line1": "694 doncaste road",
+        "line2": null,
+        "postal_code": "3108",
+        "state": "VIC"
+      },
+      "support_email": "kacang13140@gmail.com",
+      "support_phone": "+61414548113",
+      "support_url": "http://dragontattooinworld.com.au",
+      "url": "dragontattooinworld.com.au"
+    },
+    "capabilities": {
+      "afterpay_clearpay_payments": "active",
+      "au_becs_debit_payments": "active",
+      "bancontact_payments": "active",
+      "card_payments": "active",
+      "eps_payments": "active",
+      "giropay_payments": "active",
+      "ideal_payments": "active",
+      "p24_payments": "active",
+      "sepa_debit_payments": "active",
+      "sofort_payments": "active",
+      "transfers": "active"
+    },
+    "charges_enabled": true,
+    "controller": {
+      "type": "account"
+    },
+    "country": "AU",
+    "default_currency": "aud",
+    "details_submitted": true,
+    "email": "kacang13140@gmail.com",
+    "payouts_enabled": true,
+    "settings": {
+      "bacs_debit_payments": {
+      },
+      "branding": {
+        "icon": "file_1KRR3JHUhMG4O3VaIoa0x8IS",
+        "logo": "file_1Ka16KHUhMG4O3VaCNXdrSB6",
+        "primary_color": "#c44faf",
+        "secondary_color": "#eaebec"
+      },
+      "card_issuing": {
+        "tos_acceptance": {
+          "date": null,
+          "ip": null
+        }
+      },
+      "card_payments": {
+        "statement_descriptor_prefix": "DRAGON.T.T"
+      },
+      "dashboard": {
+        "display_name": "DONOTTAG&TATTOO",
+        "timezone": "Australia/Victoria"
+      },
+      "payments": {
+        "statement_descriptor": "DRAGON.T.TI.W",
+        "statement_descriptor_kana": null,
+        "statement_descriptor_kanji": null
+      },
+      "sepa_debit_payments": {
+      }
+    },
+    "type": "standard"
+  },
+  "previous_attributes": {
+    "business_profile": {
+      "support_address": null,
+      "support_email": null,
+      "support_url": null
+    }
+  }
+}
+
+隐藏行
